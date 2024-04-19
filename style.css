@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+:root {
+    /* Colores */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose_White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
+
+    /* Fonts */
+    --Principal: "Young Serif", serif;
+    --Secundaria: "Outfit", sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--Eggshell);
+}
+
+/** Globales **/
+
+h1{
+    font-size: 3.2rem;
+    font-family: var(--Segundaria);
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3{
+    font-family: var(--Principal);
+    font-weight: 400;
+    color: var(--Nutmeg);
+}
+
+li{
+    margin: 1.5rem 0;
+}
+
+p,
+li{
+    font-size: 1.2rem;
+    font-family: var(--Secundaria);
+    color: var(--Wenge_Brown);
+}
+
+span{
+    color: var(--Wenge_Brown);
+    font-weight: 700;
+}
+
+/** Contenedor Principal **/
+
+.contenedor-principal{
+    max-width: 50rem;
+    margin: 5rem auto 5rem auto;
+    padding: 2rem;
+    background-color: var(--White);
+    border-radius: 1rem;
+}
+
+.contenedor-imagen{
+    width: 30rem;
+    height: 20rem;
+}
+
+.contenedor-principal img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/** Preparation Time **/
+
+.preparation-time{
+    background-color: var(--Rose_White);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.preparation-time h3{
+    color: var(--Nutmeg);
+    margin: 0.5rem 1rem;
+}
+
+
+ul{
+    list-style-type: disc;
+}
+
+ul li::marker{
+    font-size: 1rem;
+    color: var(--Nutmeg);
+}
+
+/** Ingredients **/
+
+.ingredients ul,
+.instructions ul{
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.ingredients li{
+    padding-left: 1.5rem;
+}
+
+.ingredients li:last-of-type{
+    margin-bottom: 3rem;
+}
+
+/** Instructions **/
+
+ol li::marker{
+    font-size: 1.2rem;
+    color: var(--Nutmeg);
+    font-weight: 500;
+}
+
+.Instructions ol{
+    padding-inline-start: 2rem;
+}
+
+.contenido-lista-texto{
+    margin-left: 1.5rem;
+}
+
+.flex{
+    margin-left: 2.5rem;
+    max-width: 25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    color: var(--Wenge_Brown);
+    font-weight: 700;
+}
+
+.nutrition{
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
